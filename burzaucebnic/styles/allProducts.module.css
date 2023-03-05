@@ -1,0 +1,19 @@
+.productcard {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  color: red;
+}
+
+.product-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+  .filterselect {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .sortbutton {
+    transition: all 0.2s ease-in-out;
+  }
+

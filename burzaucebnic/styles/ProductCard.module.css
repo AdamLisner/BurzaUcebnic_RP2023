@@ -1,0 +1,35 @@
+.productcard {
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    color: red;
+  }
+  
+  .hover_underline_animation {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .hover_underline_animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover_underline_animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+
+  
